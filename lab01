@@ -1,0 +1,37 @@
+public class pkt {
+    private int masa;
+
+    public pkt() {
+        this.masa = 1;
+    }
+
+    public pkt(int a) {
+        this.setMasa(a);
+    }
+
+    public int MomBez() {
+        byte a = 0;
+        return a;
+    }
+
+    public int MomBezSt(int a) {
+        return this.MomBez() + this.getMasa() * a * a;
+    }
+
+    public void opis() {
+        System.out.println("Punkt Materialny");
+    }
+
+    public void setMasa(int a) {
+        if (a> 0) {
+            this.masa =a ;
+        } else {
+            System.out.println("Bledna masa, musi byc wieksza od zera ");
+            this.masa = 1;
+        }
+    }
+
+    public int getMasa() {
+        return this.masa;
+    }
+}
